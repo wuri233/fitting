@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+<EditText
+    android:id="@+id/in_plan_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="你的计划"
+    android:layout_weight="6"/>
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/intension_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提醒强度(min)"
+        android:textSize="20dp"/>
+
+    <SeekBar
+        android:id="@+id/intension_seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/intension_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"/>
+
+    <CheckBox
+        android:id="@+id/timing_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="定时提醒" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+</LinearLayout>
